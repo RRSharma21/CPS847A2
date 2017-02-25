@@ -3,6 +3,6 @@ var assert = require('assert');
 
 describe('Test to see if adding right', function(){
         it("should return 30, add 10, 20", function(){
-          assert.equal(add.add(10,20), 20);
-        }); 
+          assert.equal(add.add(10,20), 30);
+        });
 });
