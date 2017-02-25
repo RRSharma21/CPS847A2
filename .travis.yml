@@ -1,4 +1,9 @@
 language: node_js
 node_js
-  - "iojs"
   - "6"
+before_script:
+  - chmod 0777 ./node_modules/.bin/mocha
+  - npm install -g codecov
+after_success:
+  - npm run cover
+  - codecov --token=ae42b92f-24f5-4549-847c-826ee5c0d69f
