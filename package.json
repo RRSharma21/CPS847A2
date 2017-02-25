@@ -1,0 +1,24 @@
+{
+  "name": "assignment2",
+  "version": "1.0.0",
+  "description": "Program that Travis will run unit tests on. ",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RRSharma21/CPS847A2.git"
+  },
+  "author": "Rishabh Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RRSharma21/CPS847A2/issues"
+  },
+  "homepage": "https://github.com/RRSharma21/CPS847A2#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0"
+  }
+}

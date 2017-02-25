@@ -1,5 +1,8 @@
-function add(p1, p2)
+module.exports =
 {
-  var p3 = p1 + p2;
-  return p2; 
-}
+  add: function(p1, p2)
+  {
+    var p3 = p1 + p2;
+    return p3;
+  }
+};
